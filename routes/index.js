@@ -4,6 +4,6 @@ const routes = express.Router()
 
 routes.post('/cursos', CursoController.cadastrarCurso)
 routes.get('/CURSOS', CursoController.listarCursos)
-routes.delete('/cursos/:id/delete', CursoController.deletarCurso)
+routes.delete('/cursos/:id', CursoController.deletarCurso)
 
 module.exports = routes
